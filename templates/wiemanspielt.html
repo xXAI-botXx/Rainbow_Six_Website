@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8"> <!-- ä,ö,ü,ß-->
+   <link rel="stylesheet" href="{{url_for('static', filename='r6.css')}}"> <!-- verlinkung mit css datei-->
+   <title> Rainbow Six Siege </title> <!--Anzeige im Tab,oben-->
+   
+
+   
+   </head>
+   
+    <body>
+	
+<!-- xX Beginn der Überschrift Xx -->
+	<main id="main">
+  <h1 id="drei"> <a href="{{url_for('home')}}">Rainbow Six Siege </a> </h1>  <!--Überschrift verlinkt (mit a),eingepackt in main>css kasten um überschrift-->
+  
+  <div class="topnav" id="myTopnav">
+  <a href="{{url_for('home')}}" class="active" class="überschriften">Home</a>
+  <a href="{{url_for('news')}}" class="überschriften">News</a>
+  <a href="{{url_for('operator')}}" class="überschriften">Operator</a>
+  <a href="{{url_for('wiemanspielt')}}" class="überschriften">Wie man spielt</a>
+  <a href="{{url_for('collectables')}}" class="überschriften">Collectables</a>
+  <a href="{{url_for('spielmodi')}}" class="überschriften">Spielmodi</a>
+  <a href="{{url_for('maps')}}" class="überschriften">Maps</a>
+  <!--<a href="dlcs2.html">DLCs</a>-->
+  <!--<a href="quellen2.html">Quellen</a>-->
+  
+</div> 
+	
+	</main>
+	
+	<div id="Wie man spielt" class="tabcontent">
+ <div id="reaction" > <h3 class="sichtbar" id="größe">Wie man spielt</h3>
+  <div id="wie"><h4>Aim:</h4><p1>In Rainbow Six Siege ist eins der wichtigsten Gameplay Elementen das schießen auf Gegner. Dabei ist es sehr wichtig seine Schusswaffen unter Kontrolle zu haben.
+  <br>Es ist aber auch wichtig wie zielgenau man mit seiner Waffe umgeht. Man sollte so schnell wie möglich reagieren und dabei auch nocch so genau wie möglich treffen. Beachten sollte man auf den Kopf des Gegners zu zielen, da man in Rainbow Six Siege nach einem Kopftreffer stirbt.
+<br>   </p1></div>
+
+
+<div id="zielübung"><p1>Die Reaktionzeit ist wirklich sehr von bedeutung, aber wie schon erwähnt muss man nicht nur schnell, sondern auch genau sein. Deswegen können Sie hier ihre Reaktionszeit mit Verbindung des Zielens üben.
+<br>Es erscheinen zufällige Formen und sie müssen versuchen sie so schnell wie möglich anzuklicken. Die Formen erschein irgendwo und irgendwann (also zufällig). </p1>
+<br></div>
+
+<p class="sichtbar">Deine Zeit:  <span id="dauer"> <button id="button1" onclick="run()">Start!</button></p>      
+<div id="formen" onclick="reaktion()"></div> <!--einbindung css formen und funktion -->
+
+<script src="{{url_for('static', filename='R6.js')}}"></script> <!-- script datei -->
+</div>
+
+<div id="tipps"><h4>Tipps:</h4><p>Für Anfänger empfehle ich sich zunächst passiv zu verhalten um das Spiel langsam zu verstehen, denn als Anfänger kann das Spiel schon richtig schwierig sein. Man sollte versuchen die Maps zu verstehen und auswendig zu lernen. Ein Guter Tipp ist zudem sich selber aufzunehmen(gameplay), denn da sieht man meist was für große Fehler man begeht und sollte dann versuchen diese beim nächsten Match nicht mehr zu begehen. Man kann jedoch einfach die Kill-Kam anschauen. Dort sieht man auch wie man sich verhält und kann teilweise daraus lernen. Mit der Zeit merkt man sich auch Spots wo meist ein Gegner ist und lernt wie man sich Verhält, also wird man schon automatisch besser, wenn man einfach nur zockt.<br> Wenn man das Spiel dann etwas besser kennt empfiehlt sich die Empfindlichkeit der Bewegungen(Zielen) zu verleichtern. Dies ist zunächst sehr ungewohnt und sehr unangenehm, aber nach etwa 3 Matches hat man sich meist daran gewöhnt und hat nun den Vorteil viel schneller zu Zielen,was man in vielen Situationen benötigt.<br> Bei den Visieren kommt es immer auf die Waffe und auf einen selbst an, meine Emphelung ist jedoch das Visier immer mal wieder zu wechseln, denn man kann manchmal mit dem Reflex und manchmal besser mit dem Holo-Visier zielen. Dies ist jedoch sehr individuel, bei mir klappt das jedoch sehr gut.
+<br>Der Letzte Tipp ist, dass man sich warmspielen sollte. Dafür empfehle ich den Modus Situation. Dabei sollte man jedoch darauf achten den Gegnern so schnell wie möglich Headshots zu verteilen und das eigentliche Missionsziel ist uns hierbei ziemlich egal. es geht nur darum sein Aim zu trainieren und es zu aktivieren.<br> Mit diesen Tipps wirst du irgendwann ein guter R6 Player, beachte jedoch das man sich dabei Zeit lassen muss.</p> </div>
+
+<div class="oben"><p><b><a class="oben2" href="#main"> Klicke hier, um nach oben zu gelangen </a></b></p>   <b><p><a href="{{url_for('datenschutz')}}" class="datenschutz"> Datenschutz </a></p></b> <b><p><a href="{{url_for('impressum')}}" class="datenschutz"> Impressum </a></p></b>   </div>
+</div>
+	
+</body>
+</html>

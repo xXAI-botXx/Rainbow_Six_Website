@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8"> <!-- ä,ö,ü,ß-->
+   <link rel="stylesheet" href="{{url_for('static', filename='r6.css')}}"> <!-- verlinkung mit css datei-->
+   <title> Rainbow Six Siege </title> <!--Anzeige im Tab,oben-->
+   
+
+   
+   </head>
+   
+    <body>
+	
+<!-- xX Beginn der Überschrift Xx -->
+	<main id="main">
+  <h1 id="drei"> <a href="{{url_for('home')}}">Rainbow Six Siege </a> </h1>  <!--Überschrift verlinkt (mit a),eingepackt in main>css kasten um überschrift-->
+  
+  <div class="topnav" id="myTopnav">
+  <a href="{{url_for('home')}}" class="active" class="überschriften">Home</a>
+  <a href="{{url_for('news')}}" class="überschriften">News</a>
+  <a href="{{url_for('operator')}}" class="überschriften">Operator</a>
+  <a href="{{url_for('wiemanspielt')}}" class="überschriften">Wie man spielt</a>
+  <a href="{{url_for('collectables')}}" class="überschriften">Collectables</a>
+  <a href="{{url_for('spielmodi')}}" class="überschriften">Spielmodi</a>
+  <a href="{{url_for('maps')}}" class="überschriften">Maps</a>
+  <!--<a href="dlcs2.html">DLCs</a>-->
+  
+  
+</div> 
+	
+	</main>
+	
+	
+	
+	<div id="Spielmodi" class="tabcontent">
+    <h3 class="mü"> Spielmodi </h3>
+	<p1>In Rainbow Six Siege kann man 3 verschiedene online Spielmodi, sowie ein offline Spielmodi auswählen. Zuerst gehe ich auf die 3 online Spielmodi ein, da man Rainbow Six Siege wegen diesen online Modi spielt. <br> Alle 3 Spielmodi haben die Gemeinsamkeit, dass der Tod des kompletten Gegnerteams zum Sieg führt. Das Match kann jedoch anderst gewonnen/verloren werden:  </p1>
+<ul>
+<div class="abstandSM"></div>
+<h4><li>Bombe</li></h4>
+<p>In diesem Spielmodus haben sich die Verteidiger mit einer Bombe in einem Gebäude einbarrikadiert. Die Angreifer müssen versuchen eine der zwei Bomben mithilfe des entschärfers zu entschärfern. Die Verteidiger müssen versuchen dies zu verhindern. <br> Das Match kann durch den Tod eines Teams gewonnen werden. Das Match kann auch durch das legen/zerstören des Entschärfers gewonnen werden. Zudem gewinnen die Verteidiger, wenn die Zeit abgelaufen ist ohne das der Entschärfer gelegt wurde.<br>Dieser Modus wird am meisten gespielt und viele versuchen so schnell wie möglich den Entschärfer zu legen um das Gegner Team unter Druck zu setzten und verwenden dabei montagne sowie Rauchgranaten und andere Gadgets. Diese Taktik funltioniert sogar oft, da man in diesem Modus zwei Räume verteidigen muss und dadurch kann man leichter einen Raum einnehmen. Und dies genügt um den Entschärfer online zu bringen. Man sieht auch oft den Trick das die Verteidiger den Boden zerschießen, denn dann kann man den Entschärfer nicht mehr überall legen. In diesem Modus kann man wohl am taktischten vorgehen. </p>
+<div class="abstandSM"></div>
+<img class="picture" width=1280 heigt=600 src="{{url_for('static', filename='bombe1.jpg')}}"></img>
+<div class="abstandSM"></div>
+<img class="picture" width=1280 heigt=600 src="{{url_for('static', filename='bombe2.jpg')}}"></img>
+<div class="abstandSM"></div>
+<h4><li>Geisel</li></h4>
+<p>In Geisel haben die Verteidiger eine Geisel genommen und verschanzen sich wieder in einem Gebäude. Die Angreifer müssen versuchen die Geisel zu sichern oder das gegnerische Team zu eleminieren. Die Verteidiger müssen die Angreifer daran hindern und gewinnen ebenfalls wenn sie das Gegner Team töten. Das Team, welches die Geisel umbringt hat automatisch verloren. Als Verteidiger sollte man die Geisel nicht aus den Augen verlieren, denn oft ist es so das die Angreifer pushen und versuchen so schnell wie möglich mit der Geisel das Weite aufzusuchen. Dieser Modus ist nicht ganz so beliebt, da es sehr oft vorkommt, dass man die Geisel tötet und dafür muss man teilweise nicht mal etwas falsch gemacht haben, aber es passiert natürlich auch oft ausversehen. Man kann nämlich kene Reflexe abschalten. </p>
+<div class="abstandSM"></div>
+<img class="picture" width=1280 heigt=600 src="{{url_for('static', filename='geisel1.jpg')}}">
+<div class="abstandSM"></div>
+<h4><li>Bereich sichern</li></h4>
+<p>Bei Bereich sichern barrikarieren sich die Verteidiger in einem Geäude und versuchen ihre Stellung in einem Raum zu halten. Die Angreifer versuchen das Gegner Team zu eliminieren oder den Bereich zu sichern, in welchen dann kein Gegner sein darf. Dieser Modus fühlt sich am normalste und damit auch am langweiligsten an. Für Anfänger ist dieser Modus am besten, weil er am einfachsten ist, jedoch will man später eher Bombe oder Geisel zocken.</p>
+<div class="abstandSM"></div>
+<img class="picture" width=1280 heigt=600 src="{{url_for('static', filename='bereich1.jpg')}}"></img>
+</ul>
+<div class="abstandSM"></div>
+	<h4>Situation </h4>
+	<p>Situation ist ein offline Spielmodus, der einen an das Spiel versucht heranzuführen und nur für Anfänger oder zu trainieren gut ist. </p>
+	<div class="abstandSM"></div>
+	<img class="picture" width=1280 heigt=600 src="{{url_for('static', filename='situation1.jpg')}}"></img>
+  <div class="oben"><p><b><a class="oben2" href="#main"> Klicke hier, um nach oben zu gelangen </a></b></p>   <b><p><a href="{{url_for('datenschutz')}}" class="datenschutz"> Datenschutz </a></p></b> <b><p><a href="{{url_for('impressum')}}" class="datenschutz"> Impressum </a></p></b>   </div>
+	</div>
+	
+	
+</body>
+</html>

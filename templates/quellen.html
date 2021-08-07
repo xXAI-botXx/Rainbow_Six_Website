@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8"> <!-- ä,ö,ü,ß-->
+   <link rel="stylesheet" href="{{url_for('static', filename='r6.css')}}"> <!-- verlinkung mit css datei-->
+   <title> Rainbow Six Siege </title> <!--Anzeige im Tab,oben-->
+   
+
+   
+   </head>
+   
+    <body>
+	
+<!-- xX Beginn der Überschrift Xx -->
+	<main id="main">
+	<h1 id="drei"> <a href="{{url_for('home')}}">Rainbow Six Siege </a> </h1>  <!--Überschrift verlinkt (mit a),eingepackt in main>css kasten um überschrift-->
+
+	<div class="topnav" id="myTopnav">
+	<a href="{{url_for('home')}}" class="active" class="überschriften">Home</a>
+	<a href="{{url_for('news')}}" class="überschriften">News</a>
+	<a href="{{url_for('operator')}}" class="überschriften">Operator</a>
+	<a href="{{url_for('wiemanspielt')}}" class="überschriften">Wie man spielt</a>
+	<a href="{{url_for('collectables')}}" class="überschriften">Collectables</a>
+	<a href="{{url_for('spielmodi')}}" class="überschriften">Spielmodi</a>
+	<a href="{{url_for('maps')}}" class="überschriften">Maps</a>
+  <!--<a href="dlcs2.html">DLCs</a>-->
+ 
+  
+</div> 
+	
+	</main>
+	
+	<div class="info" > <h3>Info!</h3><p>Bitte beachten Sie auch, dass manche Bilder, Videos, sowie Texte nicht von mir stammen. Die Quellen hierzu finden Sie bei dem Abschnitt Quellen. <br>Falls es Unstimmigkeiten gibt bitte melden Sie sich bei dieser E-Mail: r6answer@gmail.com. Feedback, Fragen, Fehlerbemerkungen oder Verbesserungsvorschläge sind erwünscht. Wenden Sie sich hierbei bitte auch an: r6answer@gmail.com</p>
+	
+	<div id="Quellen" class="tabcontent">
+    <h3 class="mü">Quellen</h3>
+	
+	<table class="quellenT"> <!--tabelle-->
+	<thead class="quellenT"> <!--was oben in der tabelle steht th fettgedruckt,überschrift,td normal schrift-->
+	<tr> <!--zeile-->
+	
+		
+		
+	</tr>
+	</thead>
+	<tbody class="quellenT"><!--was  in der mitte der tabelle steht-->
+	
+	
+	
+	
+	<tr> <td>Map-Bilder</td> <td>https://rainbow6.ubisoft.com/siege/de-de/game-info/maps.aspx , eigene Sreenshots </td> </tr>
+	<tr> <td>News</td> <td>https://rainbow6.ubisoft.com/siege/de-de/home/index.aspx</td> </tr>
+	<tr> <td>Trailer-Neue Season</td> <td>https://www.youtube.com/watch?v=krrOndqSOzc  </td> </tr>
+	<tr> <td>Trailer</td> <td>https://www.youtube.com/watch?v=6wlvYh0h63k&has_verified=1 </td> </tr>
+	<tr> <td>Bild-Roadmap</td> <td> http://blog.ubi.com/rainbow-six-siege-year-3-content-outbreak-event-announced/</td> </tr>
+	<tr> <td>Operator-Infos</td> <td>https://rainbow6.ubisoft.com/siege/de-de/game-info/operators.aspx</td> </tr>
+	<tr> <td>Operator-Bilder</td> <td>https://rainbow6.ubisoft.com/siege/en-GB/game-info/operators.aspx</td> </tr>
+	<tr> <td>Waffenset-Bilder</td> <td>Sreenshots von mir aufgenommen</td> </tr>
+	<tr> <td>Spielmodi-Bilder</td> <td>Sreenshots von mir aufgenommen</td> </tr>
+	<tr> <td>Text-Über-Rainbow</td> <td>https://de.wikipedia.org/wiki/Tom_Clancy%E2%80%99s_Rainbow_Six_Siege</td></tr>
+	<tr> <td>Operator-Videos</td> <td>https://www.youtube.com/channel/UCruJTHuFfEyLmkePvBr_s-g</td></tr>
+	<tr> <td>Gameplay</td> <td>von mir aufgenommen</td> </tr>
+	<tr> <td>Hintergrund Bilder</td> <td> https://www.hdwallpapers.in/tom_clancys_rainbow_six_siege_pc_game-wallpapers.html ,https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6s_screenshot_14_208659.jpg ,https://wallpapersite.com/games/mute-kapkan-rainbow-six-siege-tom-clancys-4k-1071.html ,https://ubistatic19-a.akamaihd.net/resource/de-de/game/rainbow6/siege/r6s_wallpaper_ka_197782.jpg , Ubisoft Belohnung: Desktop-Bildschirmhintergrundpaket         </td> </tr>
+	
+	</tbody>
+	</table>
+	
+	
+</div>	
+<div class="oben"><p><b><a class="oben2" href="#main"> Klicke hier, um nach oben zu gelangen </a></b></p>   <b><p><a href="{{url_for('datenschutz')}}" class="datenschutz"> Datenschutz </a></p></b> <b><p><a href="{{url_for('impressum')}}" class="datenschutz"> Impressum </a></p></b>   </div>
+
+</body>
+</html>

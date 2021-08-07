@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8"> <!-- ä,ö,ü,ß-->
+   <link rel="stylesheet" href="{{url_for('static', filename='r6.css')}}"> <!-- verlinkung mit css datei-->
+   <title> Rainbow Six Siege </title> <!--Anzeige im Tab,oben-->
+   
+
+   
+   </head>
+   
+    <body>
+	
+<!-- xX Beginn der Überschrift Xx -->
+	<main id="main">
+	<h1 id="drei"> <a href="{{url_for('home')}}">Rainbow Six Siege </a> </h1> <!--Überschrift verlinkt (mit a),eingepackt in main>css kasten um überschrift-->
+    
+	<div class="topnav" id="myTopnav">
+	<a href="{{url_for('home')}}" class="active" class="überschriften">Home</a>
+	<a href="{{url_for('news')}}" class="überschriften">News</a>
+	<a href="{{url_for('operator')}}" class="überschriften">Operator</a>
+	<a href="{{url_for('wiemanspielt')}}" class="überschriften">Wie man spielt</a>
+	<a href="{{url_for('collectables')}}" class="überschriften">Collectables</a>
+	<a href="{{url_for('spielmodi')}}" class="überschriften">Spielmodi</a>
+	<a href="{{url_for('maps')}}" class="überschriften">Maps</a>
+  <!--<a href="dlcs2.html">DLCs</a>-->
+  
+  
+</div> 
+	
+	</main>
+	
+	
+	
+	
+	<div id="Collectables" class="tabcontent">
+    <h3 class="mü" id="co2">Collectabels</h3>
+	<div class="abstandco"></div>
+	<div  id="collect"><p1 id="hulk">In Rainbow Six Siege kann man mit der Ingame-Währung (Ansehen) sowie mit Echtgeld kosmetische Extras kaufen.<br>Man kann verschiedene Designs für die Waffen kaufen, Talismane für die Waffen, Kopfbedeckungen und Uniformen.<br> Diese sind in folgende Seltenheitsgrade eingeteilt:  </p1>
+<ol reversed id="reserver"> <!--reversed,Liste Umgekehrte reienfolge,zählung-->
+<h4 class="abstandco2"><li><ins>Gewöhnlich</ins> </li></h4>
+<img class="picture" width=1280 heigt=600 src="{{url_for('static', filename='gewöhnlich1.jpg')}}"></img>
+<h4 class="abstandco2"><li><ins>Ungewöhnlich</ins></li></h4>  <!--ins,unterstrichen-->
+<img class="picture" width=1280 heigt=600 src="{{url_for('static', filename='ungewöhnlich1.jpg')}}"></img>
+<h4 class="abstandco2"><li><ins>Selten</ins></li></h4>
+<img class="picture" width=1280 heigt=600 src="{{url_for('static', filename='selten1.jpg')}}"></img>
+<h4 class="abstandco2"><li><ins>Episch</ins></li></h4>
+<img class="picture" width=1280 heigt=600 src="{{url_for('static', filename='episch1.jpg')}}"></img>
+<h4 class="abstandco2"><li><ins>Legendär</ins></li></h4>
+<img class="picture" width=1280 heigt=600 src="{{url_for('static', filename='legendär1.jpg')}}"></img>
+</ol></div>
+<div class="abstandco3"></div>
+	<div id="AlphaPack" class="abstandco"><h4 >Alpha-Packs</h4><p>Mit Alpha-Packs kann man eine zufällige Dekoration wählen und manche Dekorationen kann man auch nur über Alpha-packs erhalten. Nach jeder gespielten Runde steigt die Chance auf ein Alpha-Pack und nach einem Sieg dreht sich ein Glücksrad, welches entscheidet ob man ein Alpha-Pack bekommt oder nicht. Man kann Alpha-Packs auch mit Ansehen kaufen.
+	 Hier eine Öffnung eines Alpha-Packs:</p> 
+	 <video  id="alpha" src="{{url_for('static', filename='AlphaPack.mp4')}}" controls></video>
+	 </div>
+	 <div class="abstandco3"></div>
+	 <div class="elite">
+	 <div id="elite" class="abstandco"><h4 >Elite-Skins</h4><p>Die wohl teuerste und ausergewöhnlichste Dekoration sind die sogenannten Elite-Skins, welche man nur mit Echtgeld kaufen kann! Wenn man ein Elte-Skin für einen Operator hat, besitzt man eine neue Uniform, eine neue Kopfbedeckung, neue Waffen-Skins(nur für diesen Operator) und neues Aussehen der Gadgets.</p>
+	 <div class="abstandco2"></div>
+	 <img class="picture" width=1280 heigt=600 src="{{url_for('static', filename='elite1.jpg')}}"></img>
+	 <div class="abstandco2"></div>
+	 <img class="picture" width=1280 heigt=600 src="{{url_for('static', filename='elite2.jpg')}}"></img>
+	 </div>
+	 <div class="oben"><p><b><a class="oben2" href="#main"> Klicke hier, um nach oben zu gelangen </a></b></p>   <b><p><a href="{{url_for('datenschutz')}}" class="datenschutz"> Datenschutz </a></p></b> <b><p><a href="{{url_for('impressum')}}" class="datenschutz"> Impressum </a></p></b>   </div>
+	</div></div>
+	
+</body>
+</html>

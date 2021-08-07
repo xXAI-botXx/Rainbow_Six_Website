@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8"> <!-- ä,ö,ü,ß-->
+   <link rel="stylesheet" href="{{url_for('static', filename='r6.css')}}"> <!-- verlinkung mit css datei-->
+   <title> Rainbow Six Siege </title> <!--Anzeige im Tab,oben-->
+   
+
+   
+   </head>
+   
+    <body>
+	
+<!-- xX Beginn der Überschrift Xx -->
+	<main id="main">
+  <h1 id="drei"> <a href="{{url_for('home')}}">Rainbow Six Siege </a> </h1>  <!--Überschrift verlinkt (mit a),eingepackt in main>css kasten um überschrift-->
+  
+  <div class="topnav" id="myTopnav">
+  <a href="{{url_for('home')}}" class="active" class="überschriften">Home</a>
+  <a href="{{url_for('news')}}" class="überschriften">News</a>
+  <a href="{{url_for('operator')}}" class="überschriften">Operator</a>
+  <a href="{{url_for('wiemanspielt')}}" class="überschriften">Wie man spielt</a>
+  <a href="{{url_for('collectables')}}" class="überschriften">Collectables</a>
+  <a href="{{url_for('spielmodi')}}" class="überschriften">Spielmodi</a>
+  <a href="{{url_for('maps')}}" class="überschriften">Maps</a>
+  <!--<a href="dlcs2.html">DLCs</a>-->
+  
+ 
+</div> 
+	
+	</main>
+	
+	
+	
+	<div id="Operator" class="tabcontent">
+  <h3 class="mü">Operator</h3>
+  <div id="ope"><p1>In Rainbow Six Siege spielt man  sogenannte Operator. Diese wählt vor jeder runde neu. Es gibt Angreifer operator und Verteidiger Operator.<br> Jeder operator hat verschiedene Geräte und Waffen. Zudem hat jeder Operator 1 bis 3 Stufen auf Schnelligkeit und 1 bis 3 Stufen Panzerung. Hat ein Operator viel Panzerung, so ist er langsamer. Ist ein Operator sehr schnell hat er wenig Panzerung. Hier die Operator: </p1>
+</div>
+  <div class="operatordiv">
+
+
+<b><h3 id="angreifer">Angreifer</h3></b>
+
+<div class="op"><h4><li>Fuze</li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='fuze1.png')}}"> <!-- Bild von Operator-->
+<p>Fuze ist ein Angreifer der Speznas und besitzt drei Panzerungs-Punkte und einen Schnelligkeits-Punkt. Er besitzt drei Streu-Sprengsätze, die jeweils 4 explodierende Granaten verschießen. Anbringen kann er dies an Wänden, Fenster und Böden.  </p>
+
+<p>Waffenset des Operators:</p><img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='fuze2.jpg')}}"> <!--Waffenset des Operators-->
+<video class="operatorV" src="{{url_for('static', filename='fuze.mp4')}}" controls></video></div>
+
+
+<div class="op"><h4><li>Glaz</li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='glaz1.png')}}"> <!-- Bild von Operator-->
+<p>Glaz ist ebenfalls ein Operator der Spezialeinheit Speznas und besitz jeweils 2 Panzerungs-und Schnelligkeits-Punkte. Seine Besonderheit ist ein Visir was seine Waffe besitzt. Dieses Visier erlaubt es ihm mehr zu zoomen und es besitzt auch Wärmeerkennung. Dies hat zum Vorteil, dass er seine Gegner gelbleuchtend sieht (sogar durch Rauch) und das aus einer weiten Entfernung. </p>
+<p>Waffenset des Operators:</p>
+<img  class="wo" width=1280 heigt=600  src="{{url_for('static', filename='glaz2.jpg')}}"> <!--Waffenset des Operators-->
+<video class="operatorV" src="{{url_for('static', filename='glaz.mp4')}}" controls></video></div>
+
+
+<div class="op"><h4><li>IQ </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='iq1.png')}}"> <!-- Bild von Operator-->
+<p>IQ ist eine Operatorin aus der GSG9 und ist sehr schnell, kann jedoch nicht so viel einstecken. Sie besitzt einen Elektronik-Scanner mit dem sie die elektrschen Geräte der Gegner aufspüren kann. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='iq2.jpg')}}"> <!--Waffenset des Operators-->
+<video class="operatorV" src="{{url_for('static', filename='iq.mp4')}}" controls></video></div>
+
+
+<div class="op"><h4><li>Blitz  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='blitz1.png')}}"> <!-- Bild von Operator-->
+<p>Blitz ist ein Angreifer aus Deutschland und ist sehr langsam, kann dafür aber auch mehr einstecken. Er besitzt ein besonderes Schild, welches ein blendendes Licht besitzt(dieses kann man fünf mal altivieren). </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='blitz2.jpg')}}"> <!--Waffenset des Operators-->
+<video class="operatorV" src="{{url_for('static', filename='blitz.mp4')}}" controls></video></div>
+
+
+<div class="op"><h4><li>Twitch  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='twitch1.png')}}"> <!-- Bild von Operator-->
+<p>Twitch ist eine von zwei französischen Angreifern. Sie hat zwei Punkte auf Rüstung, sowie zwei Punkte auf Schnelligkeit. Sie besitzt eine Schockdrohne, welche Fallen/Gadgets der Gegner ausschalten kann sowie die Gegner selbst angreifen kann. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo"  width=1280 heigt=600 src="{{url_for('static', filename='twitch2.jpg')}}"> <!--Waffenset des Operators-->
+<video class="operatorV" src="{{url_for('static', filename='twitch.mp4')}}" controls></video></div>
+
+
+<div class="op"><h4><li>Montagne  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='montagne1.png')}}"> <!-- Bild von Operator-->
+<p>Montage gehört zu Gign und ist einer von zwei Schild-Operatoren (sowie Blitz). Er kann viel einstecken, ist jedoch nicht so schnell. Sein Schild kann sich ausfahren lassen. In diesem Modus kann man Montage nur von hinten töten, Mntagne selbst jedoch kann nicht schießen(wenn das schild ausgefahren ist). </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='montagne2.jpg')}}"> <!--Waffenset des Operators-->
+<video class="operatorV" src="{{url_for('static', filename='montagne.mp4')}}" controls></video></div>
+
+
+<div class="op"><h4><li>Thermite  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='thermite1.png')}}"> <!-- Bild von Operator-->
+<p>Er ist von der FBI und ist augeglichen, was Schnelligkeit und Panzerung angeht. Thermite hat zwei exotherme Sprengladungen mit denen sich verstärkte Wände sprengen lassen können. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='thermite2.jpg')}}"> <!--Waffenset des Operators-->
+<video class="operatorV" src="{{url_for('static', filename='thermite.mp4')}}" controls></video></div>
+
+
+<div class="op"><h4><li>Ash  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='ash1.png')}}"> <!-- Bild von Operator-->
+<p>Ash ist schnell mit wenig Panzerung und gehört zu den FBI Angreifern. Sie besitzt einen Granatenwerfer mit zwei Sprengladungen, die sich in Wänden, Böden und Decken festhaken und diese dann sprengen. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='ash2.jpg')}}"> <!--Waffenset des Operators-->
+<video class="operatorV" src="{{url_for('static', filename='ash.mp4')}}" controls></video></div>
+
+
+<div class="op"><h4><li>Sledge  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='sledge1.png')}}"> <!-- Bild von Operator-->
+<p>Einer von zwei SAS Angreifern. Besitzt zwei Rüstungs- und zwei Schnelligkeits-Punkten. Er hat einen Hammer mit dem sich Wände und Böden,die nicht verstärkt sind, öffnen. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='sledge2.jpg')}}"> <!--Waffenset des Operators-->
+<video class="operatorV" src="{{url_for('static', filename='sledge.mp4')}}" controls></video></div>
+
+
+<div class="op"><h4><li>Thatcher  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='thatcher1.png')}}"> <!-- Bild von Operator-->
+<p>Thatcher ist ein englischer Angreifer, welcher zwei Rüstungs- und zwei Schnelligkeits-Punkten hat. Er besitzt drei EMP-Granaten mit denen sich Elektrische Geräte ausschalten lassen.    </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='thatcher2.jpg')}}"> <!--Waffenset des Operators-->
+<video class="operatorV" src="{{url_for('static', filename='thatcher.mp4')}}" controls></video></div>
+
+
+<div class="op"><h4><li>Buck  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='buck1.png')}}"> <!-- Bild von Operator-->
+<p>Buck ist ein JTF Operator und ist ausgeglichen in Panzerung und Geschwindigkeit. Seine Waffe besitzt einen zusätzlichen Schrotflintenlauf, welchen ihm erlaubt schnell vom Sturmgewehr zur Schrotflinte zu wechseln. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='buck2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='blackice.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Blackbeard  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='blackbeard1.png')}}"> <!-- Bild von Operator-->
+<p>Blackbeard besitzt 2 Rüstngspunkte und 2 Schnelligkeitspunkte. Er kann seine Waffe mit einem kleinen Schutzschild ausrüsten (er besitzt zwei Stück), dann ist er jedoch langsamer und braucht auch länger zum Zielen. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='blackbeard2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='dustline.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Capitao  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='capitao1.png')}}"> <!-- Bild von Operator-->
+<p>Capitao ist ein Bope Operator und ist sehr schnell mit wenig Rüstung. Er besitzt eine Armbrust mit zwei Feuerpfeilen, welche in einem kleinen Umkreis ein Feuer auslösen und zwei Rauchpfeile, die wie Rauchgranaten fungieren. Seine Pfeile werden von dem Granaten-abwehrsystem nicht erkannt. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='capitao2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='skullrain.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Hibana  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='hibana1.png')}}"> <!-- Bild von Operator-->
+<p>Hibana ist die japanische Angreiferin und ist sehr schnell mit wenig Panzerung. Sie besitzt einen Sprengladungswerfer, der ihr erlaubt drei kleine Ladungen, die verstärkte Wände zerstören können, zu verschießen. Also ähnlich wie Thermite mit kleinen Veränderungen.  </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='hibana2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='redcrow.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Jackal  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='jackal1.png')}}"> <!-- Bild von Operator-->
+<p>Jackal ist der spanische Angreifer und ist ausgeglichen bei Schnelligkeit und Rüstung. Er besitzt einen Fußabtruck-Scanner der ihm ermöglicht Gegner zu orten(vier mal möglich), wenn er ihren Fußabtruck scannt. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='jackal2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='velvetshell.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Ying  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='ying1.png')}}"> <!-- Bild von Operator-->
+<p>Sie besitzt zwei Punkte Rüstung und zwei Punkte auf Schnelligkeit. Sie hat drei Candela-Granaten, welche wie Blendgranaten funktioniern mit dem unterchied, dass die Candela-Granate mehrere Blendkörper abfeuert. Zudem kann man das gerät durch Fenster und Wänden feuern und sie rollen auch am Boden</p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='ying2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='bloodorchid.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Zofia  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='zofia1.png')}}"> <!-- Bild von Operator-->
+<p>Zofia ist mittelmäßig schnell und gehört zu den Grom Operatoren. Sie besitzt einen Granatwerfer mit dem sich zwei Kontaktgranaten abfeuern lassen, sowie vier Betäubungsgranaten. Sie kann sich, wenn sie down liegt, selbst wiederbeleben, besitzt dann jedoch nur 1 Lebenspunkt </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='zofia2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='whitenoise.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Dokkaebi  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='dokkaebi1.png')}}"> <!-- Bild von Operator-->
+<p>Dokkaebi besitzt zwei Punkte auf Schnelligkeit wie auf Rüstung. Sie kann zwei mal pro Runde die Handys der Vertidiger klingeln lassen, bis sie es ausschalten. Zudem kann sie fallengelassene Handys der Verteidiger hacken um zugriff auf deren Kameras zu haben. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='dokkaebi2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='whitenoise.mp4')}}" controls></video></div>
+
+
+<b><h3 id="verteidiger">Verteidiger</h3></b>
+
+
+<div class="op"><h4><li>Tachanka  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='tachanka1.png')}}"> <!-- Bild von Operator-->
+<p>Ein russischer Verteidiger, welcher langsam ist. Er kann ein Maschinengewehr aufstellen. Dieses hat ein kopfschützendes Schild. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo"  width=1280 heigt=600 src="{{url_for('static', filename='tachanka2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='tachanka.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Kapkan  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='kapkan1.png')}}"> <!-- Bild von Operator-->
+<p>Er besitzt zwei Punkte auf Schnelligkeit und zwei Punkte auf Panzerung und gehört zur Speznas. Er kann sechs Durchgangssperren anbringen, welche einen schaden von 50 Lebenspunkten auslösen, wenn jemand sie auslöst, indem er durchgeht. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo"  width=1280 heigt=600 src="{{url_for('static', filename='kapkan2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='kapkan.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Jäger  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='jäger1.png')}}"> <!-- Bild von Operator-->
+<p>Ein deutscher Verteidiger, welcher sehr schnell ist. Er kann drei Granaten-Abwehrsysteme anbringen, die Granten abfangen. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='jäger2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='jäger.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Bandit  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='bandit1.png')}}"> <!-- Bild von Operator-->
+<p>Bandit ist von der GSG9 und hat vier Autobatterien mit denen er verstärkte Wände oder stacheldraht elektrisieren kann. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='bandit2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='bandit.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Rook  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='rook1.png')}}"> <!-- Bild von Operator-->
+<p>Rook ist von Gign und hat drei Rüstungspunkte. Er kann Rüstungsmatten verteilen, welche den Schaden verringert, den man erhält. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='rook2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='rook.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Doc  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='doc1.png')}}"> <!-- Bild von Operator-->
+<p>Ist ein französischer Verteider, welcher langsam ist. Er kann drei Spritzen verteilen, die eine Heilung von 40 Lebenspunkten verursachen. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='doc2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='doc.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Puls  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='puls1.png')}}"> <!-- Bild von Operator-->
+<p>Puls ist von der FBI und sehr schnell. er hat einen Herzdetektor, welcher Herzschläge im umkreis von 12 Metern erkennt. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='puls2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='puls.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Castle  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='castle1.png')}}"> <!-- Bild von Operator-->
+<p>Castle ist ein ausgeglichener Operator, was Schnelligkeit und Rüstungspunkten angeht. Er kann drei schusssichere Barrikaden aufstellen. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='castle2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='castle.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Smoke  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='smoke1.png')}}"> <!-- Bild von Operator-->
+<p>Smoke ist relativ schnell und gehört zu den SAS. Er hat drei ferngezündete Gasgranaten, welche Ggner schaden zufügen.  </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='smoke2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='smoke.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Mute  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='mute1.png')}}"> <!-- Bild von Operator-->
+<p>Mute kann vier Störsender aufstellen, welche elektronische Geräte stört. Er besitzt zwei Geschwindigkeits und zwei Rüstungspunkte.  </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='mute2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='mute.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Frost  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='frost1.png')}}"> <!-- Bild von Operator-->
+<p>Sie besitzt zwei Punkte auf rüstung wie auf Schnelligkeit. Sie hat drei Willkommensmatten, welche Angreifer sofort down bringen, wenn sie hineinstehen und sie bewegungsunfähig macht. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='frost2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='blackice.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Valkyrie  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='valkyrie1.png')}}"> <!-- Bild von Operator-->
+<p>Ist eine Operatorin der Navy Seals und hat zwei schnelligkeits und zwei Rüstungspunkte. Sie kann drei Kameras verteilen, welche sich schneller und 360 Grad drehen lassen. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='valkyrie2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='dustline.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Caveira  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='caveira1.png')}}"> <!-- Bild von Operator-->
+<p>Sie ist de Bope Verteidigerin und ist sehr schnell. Sie kann in einen Modus wechseln, der sie leiser macht (auch beim rennen) und dabei hinterlässst sie keine Fußabdrücke. Zudem hat sie eine spezielle Pistolle, sowie die Fähigkeit Gegner, die down sind abzuhören, um die Positionen der anderen Gegner zu orten. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='caveira2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='skullrain.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Echo  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='echo1.png')}}"> <!-- Bild von Operator-->
+<p>Echo ist ein Japaner, welcher langsam ist. er hat eine Drohne, die an der Decke hängen kann. Man kann sie zur Ortung von Gegnern nutzen oder Gegner damit schocken. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" class="operatorB" width=1280 heigt=600 src="{{url_for('static', filename='echo2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='redcrow.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Mira  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='mira1.png')}}"> <!-- Bild von Operator-->
+<p>Mira kann zwei Fenster an verstärkte Wände befestigen. Durch diese man nur von einer Seite durchschauen kann. Die Fenster lassen sich auch öffnen. Mira ist eine spanisch eine Operatorin. Sie ist langsam. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='mira2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='velvetshell.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Lesion  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='lesion1.png')}}"> <!-- Bild von Operator-->
+<p>Lesion ist ausgeglichen schnell und ist Chinese. Er kann transparente Giftfallen platzieren, welche über Zeit schaden zufügen, wenn man sie nich entfernt. </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='lesion2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='bloodorchid.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Ela  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='ela1.png')}}"></img> <!-- Bild von Operator-->
+<p>Ela ist die polnische Vertigerin und ist sehr schnell. Sie kann Grozmot-Minen platziern, welche aktiviert werden, wenn ein Gegner in der nähe ist und ihn dann betäuben und seine Empfindlichkeit verändern.  </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='ela2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='bloodorchid.mp4')}}" controls></video></div>
+
+<div class="op"><h4><li>Vigil  </li></h4>
+<img class="operatorB" width=445 heigt=250 src="{{url_for('static', filename='vigil1.png')}}"></img> <!-- Bild von Operator-->
+<p>Er ist der neue koreanische Verteidiger. Er ist sehr schnell und kann sich für Drohnen eine Zeit lang unsichtbar machen.  </p>
+<p>Waffenset des Operators:</p>
+<img class="wo" width=1280 heigt=600 src="{{url_for('static', filename='vigil2.jpg')}}"> <!--Waffenset des Operators--><video class="operatorV" src="{{url_for('static', filename='whitenoise.mp4')}}" controls></video></div>
+
+
+</div>
+<div class="oben"><p><b><a class="oben2" href="#main"> Klicke hier, um nach oben zu gelangen </a></b></p>   <b><p><a href="{{url_for('datenschutz')}}" class="datenschutz"> Datenschutz </a></p></b> <b><p><a href="{{url_for('impressum')}}" class="datenschutz"> Impressum </a></p></b>   </div>
+  </div> 
+
+</body>
+</html>

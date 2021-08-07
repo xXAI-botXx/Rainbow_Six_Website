@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8"> <!-- ä,ö,ü,ß-->
+   <link rel="stylesheet" href="{{url_for('static', filename='r62.css')}}"> <!-- verlinkung mit css datei-->
+   <title> Rainbow Six Siege </title> <!--Anzeige im Tab,oben-->
+   
+
+   
+   </head>
+   
+    <body>
+	
+<!-- xX Beginn der Überschrift Xx -->
+	<main id="main">
+	<h1 id="drei"> <a href="{{url_for('home')}}">Rainbow Six Siege </a> </h1> <!--Überschrift verlinkt (mit a),eingepackt in main>css kasten um überschrift-->
+    
+	<div class="topnav" id="myTopnav">
+	<a href="{{url_for('home')}}" class="active" class="überschriften">Home</a>
+	<a href="{{url_for('news')}}" class="überschriften">News</a>
+	<a href="{{url_for('operator')}}" class="überschriften">Operator</a>
+	<a href="{{url_for('wiemanspielt')}}" class="überschriften">Wie man spielt</a>
+	<a href="{{url_for('collectables')}}" class="überschriften">Collectables</a>
+	<a href="{{url_for('spielmodi')}}" class="überschriften">Spielmodi</a>
+	<a href="{{url_for('maps')}}" class="überschriften">Maps</a>
+  <!--<a href="dlcs2.html">DLCs</a>-->
+  
+  
+</div> 
+	
+	</main>
+	
+	
+	<div id="Maps" class="tabcontent">
+    <h3 class="mü">Maps</h3>
+	<p>In Rainbow Six Siege gibt es 18 Maps. Diese zu kennen ist sehr wichtig, da man wissen sollte wo was auf einer map ist. Hierzu ein kleines Beispiel:
+	<br>Man befindet sich im Erdgeschoss und die gegner nehmen den Gefahrengutbehälter im ersten Stock ein. Man muss nun so schnell wie möglich in den ersten Stock(zum Gefahrengutbehälter). nun muss man wissen wo es denn nach oben geht und genau deswegen sollte man sich aufjedenfall auf einer map auskenn.
+	<br>Dadurch das jede Map sehr unterschiedlich ist wird dies erschwärt. 
+	<br>Auch ein Grund dafür, dass man ein Mapkenntnis benötigt ist, dass man in Rainbow gute calls geben sollte(also den Mitstreitern eine gute/klare Auskunft über etwas bestimmtes geben muss). Und dazu braucht man Mapkenntnisse, denn man muss sagen können wo sich Beispielsweise ein Gegner befindet und wenn man keine Ahnung hat wo das sein soll bringt das dem Team nichts.
+	Auch wenn dir ein Teamspieler einen standort eines Gegners sagt bringt das einem gar nichts, wenn man sich auf der jeweiligen Map nicht auskennt.
+<br> Es gibt übrigens jede Map bei Tag und bei Nacht, was die Map komplett anderst macht, da die Lichtverhältnisse komplett verändert sind.	
+	<br>Aus diesem Grund zeige ich hier die verschiedene Maps inklusive Bilder der Gebäuden. </p>
+	<ol> <!--geordnete liste-->
+	
+	<div class="mapAb"><h4>  <li>Haus</li> </h4>
+    <img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='haus.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='haus2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='haus3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='haus4.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='haus5.jpg')}}"></img>
+	
+	
+	<p>Haus ist die kleinste Map in Rainbow Six Siege. Es gibt keine langen Gänge. Auf dieser Map kennt man sich schnell aus, also ideal für Anfänger. Es gibt 3 Stockwerke mit jeweils zwei Treppen die ins nächste Geschoss führen.</p></div> 
+	<div class="mapAb"><hr><h4> <li>Oregon </li> </h4>
+	<img class="picture2"width=445 heigt=250 src="{{url_for('static', filename='oregon1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='oregon2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='oregon3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='oregon4.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='oregon5.jpg')}}"></img>
+	
+	<p>Oregon ist eine große Map mit nicht vielen Wegen. Es gibt viele Deckungsmöglichkeiten und viele lange, aber auch kurze Gänge. </p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Hereford-Basis </li> </h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='hereford1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='hereford2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='hereford3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='hereford4.jpg')}}"></img>
+	
+	<p>Eine Map die den Trainingsbereich des Rainbow Six Teams nachstellen soll. Sie hat mehrere Stockwerke, dafür ist jedes Stockwerk nicht allzu groß. Vom Aufbau ist die Map ziemlich simple und damit gut für Anfänger. </p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Clubhaus </li></h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='club1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='club2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='club3.jpg')}}"></img>
+	<p>Clubhaus ist eine große Map mit aber nur 3 Stockwerken. Durch ihre größe ist die Map nicht ganz einfach zu verstehen. Die Map hat jedoch viele lange und auch kurze Gänge, sowei veschiedene Wege um an ein Ziel zu gelangen und das macht die Map echt gut. </p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Präsidentenflugzeug </li> </h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='flugzeug1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='flugzeug2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='flugzeug3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='flugzeug4.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='flugzeug5.jpg')}}"></img>
+	
+	<p>Die Komplette Map bewegt sich auf sehr engem Raum und ist dafür sehr in die Länge gezogen. Mit ihren 3 Stockwerken ist diese Map leicht zu verstehen und man kann gut alternativ Ruten durch das obere Gestock nehmen, jedoch ist wie schon gesagt alles sehr eng was der Map nicht zu gute fällt. </p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Konsulat </li> </h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='kon1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='kon2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='kon3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='kon4.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='kon5.jpg')}}"></img>
+	
+	<p>konsulat ist eine mittelmäßig große Map und ist vom Aufbau her nicht kompliziert. Die Map kombiniert gut lange Gänge mit vielen alternativ Wegen. Konsulat wirkt wie eine Standart Map und genauso fühlt sie sich auch an. </p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Bank </li> </h4> 
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='bank1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='bank2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='bank3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='bank4.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='bank5.jpg')}}"></img>
+	
+	<p>Der Aufbau von Bank ist etwas komplizierter und für Anfänger erstmals nicht so leicht nachvollziehbar. Die größe der Map erleichtert dies nicht gerade. Trotzdem ist die Map gut balanciert und besitz viele möglichkeiten sich zu verstecken. leider ist es Verteidiger leicht möglich die Angreifer an ihrem spawn zu töten, was allgemeinen frust auslöst und den Spielern deswegen nicht gefällt. Zudem gibt es zu viele große Räume.</p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Kanal </li> </h4> 
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='kanal1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='kanal2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='kanal3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='kanal4.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='kanal5.jpg')}}"></img>
+	
+	<p>Kanal ist eine große Map, die in zwei Gebäuden aufgeteilt ist. Verbunden sind diese mit einem Gang. Der Map fehlt es nicht an langen Gängen, an versteck Möglichkeiten und auch nicht an Platz. Es gibt viele Möglichkeiten für Angreifer wie für Verteidiger. </p></div>
+	
+	<div class="mapAb"><hr><h4><li>Chalet </li> </h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='chalet1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='chalet2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='chalet3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='chalet4.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='chalet5.jpg')}}"></img>
+	
+	<p>Eine Map die standart gemäß groß ist. Sie hat einen sehr offenen Raum, sowie mehrere kleinere Räume. Es gibt viele Deckungsmöglichkeiten und ist einfach und schnell zu verstehen. Eine Map die sehr gut ausbalanciert ist. </p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Cafe Dostojewski </li> </h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='cafe1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='cafe2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='cafe3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='cafe4.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='cafe5.jpg')}}"></img>
+	
+	<p>Dies ist eine große Map mit vielen langen Gängen und einem sehr großen und offen Raum. Es fehlt ihr ein bisschen an Möglichkeiten für die Angreifer, was an der langweiligen Grundstruktur liegt. </p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Jacht </li> </h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='jacht1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='jacht2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='jacht3.jpg')}}"></img>
+	
+	<p>Die erste DLC Map die erschienen ist. Sie hat ein sehr interessantes Setting und ist auch von der Grundstruktur sehr ansprechend. Sie bietet viel Möglichkeiten für Angreifer wie Verteidiger. Es gibt viele Deckungsmöglichkeiten und sie ist von der größe her sehr angenehm und vorallem nicht zu kompliziert. </p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Grenze </li> </h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='grenze1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='grenze2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='grenze3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='grenze4.jpg')}}"></img>
+	
+	<p>Grenze ist von der Struktur her sehr angenehm einfach und auch sehr angenehm zum spielen, da sie große Räume und kleine Räume gut verbindet. Schade finde ich, dass Map sehr langweilig aussieht und sich nicht nach einer DLC Map anfühlt(nicht speziell genug).</p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Favela </li> </h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='favela1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='favela2.png')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='favela3.jpg')}}"></img>
+	
+	
+	
+	<p>Eine sehr einfache Map, die eigentlich nur aus kleinen und langen Gängen besteht. Es gibt dafür aber sehr viele Wege und dadurch erschafft das viele Möglichkeiten für Angreifer wie für Verteidiger. Die Map sieht sehr interessant aus und ist auch von der Struktur sehr anderst als die bisherigen Maps. </p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Wolkenkratzter </li> </h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='wolken1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='wolken2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='wolken3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='wolken4.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='wolken5.jpg')}}"></img>
+	
+	<p>Die wohl komplezierteste und auch schönste Map die es in Rainbow gibt. Sie ist nicht einfach zu verstehen, kann aber durch diese komplizierte Struktur viele Wege und Deckungsmöglichkeiten erschaffen. Die Map ist mittelmäßig groß. </p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Bartlett Univerity </li> </h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='bart1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='bart2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='bart3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='bart4.jpg')}}"></img>
+	
+	<p>Ursprünglich eine PvE Map, sie wurde dann aber auch für den PvP Modus veröffentlicht. Dies merkt man der Map an, denn sie ist nicht gut ausbalanciert und ist deswegen nicht gut zu spielen. Die Map ist leider viel zu offen und besitzt zu wenig Möglichkeiten für Angreifer. </p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Küste </li> </h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='küste1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='küste2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='küste3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='küste4.jpg')}}"></img>
+	
+	<p>Küste ist eine sehr interessante Map, denn sie ist in der Mitte sehr offen umschlingt vom eigentlichen Gebäude. Generell ist sie (nicht nur in der Mitte) sehr offen, was den Angreifern viele Möglichkeiten gibt. Die Verteidiger bleiben da leider aus, haben jedoch immernoch genug Spots wo sie sicher sind. Die Map ist also nicht so gut balanciert und trotzdem macht es sehr spaß auf ihr zu spielen.  </p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Freizeitpark </li> </h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='frei1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='frei2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='frei3.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='frei4.jpg')}}"></img>
+	
+	<p>Eine Map die relativ groß und kompliziert ist. Die Dunkelheit auf der Map gibt Verteidigern einen ganz klaren vorteil und die vielen Wege unterstützen Verteidiger noch mehr. Für Angreifer gibt es zwar auch viele Wege, aber vergleichsweise sind dies wenige. Das düstere Setting sieht jedoch optisch sehr gut aus und der soundtrack fällt einen sofort auf. </p></div>
+	
+	<div class="mapAb"><hr><h4> <li>Turm </li> </h4>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='turm1.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='turm2.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='turm4.jpg')}}"></img>
+	<img class="picture2" width=445 heigt=250 src="{{url_for('static', filename='turm5.jpg')}}"></img>
+	
+	
+	<p>Der Turm ist eine gerade erst erschienene Map, die sehr offen wirkt, aber auch gleichzeitig sehr eng und klein ist. Der Spawnpunkt der Anngreifer ist aufjdenfall ein Highlight der Map und Designed ist die Map auch sehr ordentlich. </p></div>
+	
+	</ol>
+	<div class="oben"><p><b><a class="oben2" href="#main"> Klicke hier, um nach oben zu gelangen </a></b></p>   <b><p><a href="{{url_for('datenschutz')}}" class="datenschutz"> Datenschutz </a></p></b> <b><p><a href="{{url_for('impressum')}}" class="datenschutz"> Impressum </a></p></b>   </div>
+</div>	
+
+
+</body>
+</html>

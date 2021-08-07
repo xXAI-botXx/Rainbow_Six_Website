@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8"> <!-- ä,ö,ü,ß-->
+   <link rel="stylesheet" href="{{url_for('static', filename='r6.css')}}"> <!-- verlinkung mit css datei-->
+   <title> Rainbow Six Siege </title> <!--Anzeige im Tab,oben-->
+   
+
+   
+   </head>
+   
+    <body>
+	
+<!-- xX Beginn der Überschrift Xx -->
+	<main id="main">
+  <h1 id="drei"> <a href="{{url_for('home')}}">Rainbow Six Siege </a> </h1>  <!--Überschrift verlinkt (mit a),eingepackt in main>css kasten um überschrift-->
+  
+  <div class="topnav" id="myTopnav">
+  <a href="{{url_for('home')}}" class="active" class="überschriften">Home</a>
+  <a href="{{url_for('news')}}" class="überschriften">News</a>
+  <a href="{{url_for('operator')}}" class="überschriften">Operator</a>
+  <a href="{{url_for('wiemanspielt')}}" class="überschriften">Wie man spielt</a>
+  <a href="{{url_for('collectables')}}" class="überschriften">Collectables</a>
+  <a href="{{url_for('spielmodi')}}" class="überschriften">Spielmodi</a>
+  <a href="{{url_for('maps')}}" class="überschriften">Maps</a>
+  <!--<a href="dlcs2.html">DLCs</a>-->
+  
+  
+</div> 
+	
+	</main>
+	
+	
+	
+	
+	<div id="News" class="tabcontent"> <!--alle buttons werden in ein class und in unterschiedlichen ids unterteilt-->
+  <h3 class="mü">News</h3>
+  
+  
+
+<div class="neueSeason" > <h3>Operation Chimera 06.03.2018</h3><p1>Die erste Season des dritten Jahres nach dem erscheinen von Rainbow Six Siege ist nun erschienen. Diesmal bekommen wir keine Map, sondern zwei Angreifer, sowie einen Zombie-Coop-Modus, den man mit bis zu zwei anderen Spielern spielen kann. Dies ist jedoch ein Zeit begrenzstes Event!<br>
+Es gibt zudem auch neue Packs. Diese enthalten 50 verschiedene Designs für Waffen, Talismane, Kopfbedeckungen und Uniformen. Sie sind alle im Style von Operation Chimera und die Packs können nur mit Echtgeld erworben werden!</p1>
+<video id="avn" src="{{url_for('static', filename='chimera.mp4')}}" class="gameplay" controls></video>
+</div>
+  
+  <div class="neueSeason" > <h3>Die neue Season 02.11.2017</h3><p1>Die neue Season,White Noise, ist da. In „White Noise“ stoßen zwei Operator aus dem 707. Spezialbataillon zum Rainbow-Team, um an einer Rettungsmission hoch oben im „Mok Myeok“-Turm, unserer neuen kostenlosen Karte, teilzunehmen. Hinzu kommt Zofia, die zweite GROM-Spezialistin, die Operator für das Rainbow-Team wird.<br>
+In der letzten Saison des zweiten Jahres sollte das Erlebnis der Spieler verbessert werden, indem eine neue Rückstoßanimation für Pistolen, neue Benutzeroberflächen-Anzeigen für die Fähigkeiten der Operator und eine Synchronisierung der Flugbahn von Granaten eingeführt wurden. Weitere Details sind weiter unten zu finden.<br>Zur Leitung von Operation White Noise rekrutiert das Rainbow-Team zwei der Besten des 707. SMB: Dokkaebi und Vigil.
+Die neuen Operator werden für Inhaber eines Season Pass sofort freigeschaltet und stehen ihnen sieben Tage lang exklusiv zur Verfügung. Nach der Exklusivphase können dann alle Spieler die Operator mithilfe von Ansehen oder R6-Credits freischalten.<br> In dieser Saison wird Mark R. „Mute“ Chandar mit einem Elite-Set geehrt. Inspiriert durch den legendären Mut der Phantom-Sonderaufklärungseinheit, die kurz vor Beginn des Zweiten Weltkriegs gegründet wurde, verkörpert Mute die F-Schwadron.
+Jedes Elite-Set steht in Bezug zum jeweiligen Operator. Enthalten sind: Eine einzigartig gestaltete Uniform, ein Waffen-Design, ein Geräte-Design, ein Chibi-Talisman und eine charakteristische Siegesanimation.</p1>
+<iframe id="seasonvideo" width="560" height="315" src="https://www.youtube.com/embed/krrOndqSOzc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
+
+
+<div class="neueSeason">
+<h3>Year 3 02.11.2017</h3>
+<p>Ubisoft hat nun angekündigt, dass ein drittes Jahr mit neuen Inhalten kommen wird. Diese besteht wieder aus 4 Seasons die jeweils nach einem viertel Jahr erscheinen. Es soll in der 1.Season einen Zombiemodus erscheinen, genaueres ist jedoch noch nicht bekannt.<br>Zudem sollen die Operator von Italien und Marokko in der 2. und 4. season erscheinen. </p>
+<p>Für 30 Euro ist der neue Season Pass nun erhältlich und damit endet bald der verkauf des zweiten Season Passes.</p>
+<img class="bildgroße" src="{{url_for('static', filename='roadmap.jpg')}}" width="813" eight="344.5"></img>
+</div>
+
+<div class="neueSeason">
+<h3>Verbesserungen 02.11.2017</h3>
+<p>Wir testen eine neue Synchronisierungslogik für einige Projektile (mit dem primären Fokus auf Granaten).<Br>
+Der Hauptzweck der Flugbahnsynchronisierung besteht darin, Probleme zu beheben, bei denen eine Granate im Spiel-Client desynchronisiert und plötzlich zurückteleportiert wird. Diese Änderung der Synchronisierung gibt uns die Möglichkeit, die Flugbahn zwischen dem, was der Server sieht, und dem, was ihr auf eurem Client seht, anzugleichen. So wird die Wahrscheinlichkeit reduziert, dass eure Granate zu euch zurückkehrt, nachdem ihr sie verwendet habt. Im Folgenden findet ihr ein Beispiel für das aktuelle Problem, das auf diese Weise behoben werden soll: </p>
+<br> Neben dieser Änderung werden wir beim Werfen einer Granate die Eigengeschwindigkeit des Spielers in Betracht ziehen. In der Folge wird das Bewegen beim Werfen einer Granate auf verschiedene Weise Einfluss auf die Flugbahn nehmen. Die anfängliche Geschwindigkeit der Granate wird nun mit der Bewegungsgeschwindigkeit des Werfers zu dem Zeitpunkt, an dem die Granate geworfen wird, kombiniert. Die Geschwindigkeit des Werfers wird deshalb die Flugbahn folgendermaßen beeinflussen:
+    <ul>  <!--ungeordnete Liste-->
+    <li>Das Werfen einer Granate aus einer Vorwärtsbewegung resultiert in einem weiteren Wurf.</li>
+    <li>Das Werfen einer Granate aus einer Rückwärtsbewegung resultiert in einem kürzeren Wurf.</li>
+    <li>Das Werfen einer Granate aus einer Seitwärtsbewegung verleiht der Granate eine seitlich abweichende Flugbahn.</li>
+	</ul>
+</div>
+
+<div class="neueSeason">
+<h3>Pistolenverbesserung 02.11.2017</h3>
+<p>Für einen besseren Spielerkomfort haben wir die Pistolenanimation verändert. Unser oberstes Ziel ist es hierbei, Pistolen zu einer echten Alternative für die Spieler zu machen – nicht bloß zu einer allerletzten Möglichkeit, wenn ihr keine Munition mehr habt.<br>
+Vor dieser Änderung musstet ihr immer über Kimme und Korn zielen, weil die Animation den Lauf der Pistole in der Mitte des Bildschirms (dort, wo die Kugel trifft) angehoben hat. Als Spieler musstet ihr dann raten, wo der Gegner war. Dieses Problem trat vor allem auf, wenn ihr auf den Kopf des Gegners gezielt habt. <br>
+Außerdem haben wir die Feuerrate für alle Pistolen erhöht. Mit dieser Änderung können die Spieler ihre Magazine nun erheblich schneller leer feuern. Dies hat den zusätzlichen Vorteil, dass die Pistolen jetzt tödlicher sind, was ebenfalls zu ihrem Wert als echte Alternative beiträgt. </p>
+</div> 
+
+<div class="neueSeason">
+<h3>Anzeigeverbesserungen 02.11.2017</h3>
+<p>Wir führen Verstärkungs- und Schwächungsanzeigen auf dem HUD der Benutzeroberfläche ein. Dies ermöglicht eine bessere Visualisierung für den Fall, dass der Spieler zum Beispiel Rooks Rüstung verwendet oder auf eine von Lesions Minen tritt. Mit der neuen visuellen Vereinheitlichung sämtlicher Effekte auf den Spielercharakter wird nun alles angezeigt, was zurzeit auf euch wirkt.
+<br>Hierzu gehören:
+<ul>
+    <li>Rook-Rüstung</li>
+    <li>Jackals Markierung (und das Markieren als Jackal)</li>
+    <li>Lesions GU-Mine</li>
+    <li>Dokkaebis Telefon-Hack</li>
+</ul>
+
+Außerdem wurde eine Farbcodierung eingeführt:
+<ul>
+    <li>Blau: Positiver Effekt</li>
+    <li>Rot: Negativer Effekt</li> 
+	</ul></p>
+</div> 
+
+<div class="oben"><p><b><a class="oben2" href="#main"> Klicke hier, um nach oben zu gelangen </a></b></p>   <b><p><a href="{{url_for('datenschutz')}}" class="datenschutz"> Datenschutz </a></p></b> <b><p><a href="{{url_for('impressum')}}" class="datenschutz"> Impressum </a></p></b>   </div>
+</div>
+
+</body>
+</html>

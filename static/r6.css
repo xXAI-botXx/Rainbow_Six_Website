@@ -1,0 +1,959 @@
+#ffcc00=rot;
+
+
+a{
+	color:#ffcc00;
+	
+}
+
+.new1{
+	background-color:black;
+	padding-top:10px;
+	padding-bottom:10px;
+
+	widht:100%;
+	
+}
+
+
+body {
+	background-image:linear-gradient(270deg, #ffcc00 5%, black 80%);
+	width:center;
+	
+	
+	}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+
+/* xX Beginn der Grundstruktur */
+body {
+	/*padding:20px  ;
+	margin:25px;*/
+	
+	font-family:serif;
+	content: ;
+	/*border:5px solid black ;*/
+	width:center;
+	position:center;
+	
+}
+/* xX Ende der Grundstruktur Xx */
+
+
+
+
+
+
+/* xX beginn derÜberschrift Xx */
+
+#main {  /* Überschriften box */
+	/*background-color:black;*/
+	
+	/*border-radius:1em;*/
+	padding-bottom:250px;
+}
+
+width:center;
+	max-width:100%;
+	min-width:100%;
+	position:center;
+	
+h1 { /*überschrift*/
+	font: /*bold 5em Helvetica,*/ Arial, Sans-Serif;
+	padding: 0.2em;
+	margin: 0em;
+	position:center;
+	max-width:500%;
+	min-width:100%;
+	font-size:auto;
+	
+	
+}
+
+
+
+a{
+	color:#ffcc00;
+}
+a:visited {  /*farbe überschrift show*/
+   color:#ffcc00;
+   }
+a:hover {  /*auf überschrift fabänderung*/
+   color:#a1710b;
+   }
+
+
+#drei { /**überschrift,3d und schatten**/
+	/*text-shadow: 1px -1px 0px hsla(0, 0%, 70%, 1), 2px -2px 0px hsla(0, 0%, 65%, 1), 3px -3px 0px hsla(0, 0%, 60%, 1), 4px -4px 0px hsla(0, 0%, 55%, 1), 5px -5px 0px hsla(0, 0%, 50%, 1), 6px -6px 0px hsla(0, 0%, 45%, 1), 7px -7px 0px hsla(0, 0%, 40%, 1), 8px -8px 0px hsla(0, 0%, 35%, 1), 9px -9px 0px hsla(0, 0%, 30%, 1);*/
+    text-align:center;
+	color: #ffcc00;
+	padding-top:50px;
+	width:center;
+	
+	border:5px;
+	position:center;
+	font: bold 5em Helvetica, Arial, Sans-Serif;
+	/*color:linear-gradient(270deg, #ffcc00 5%, black 80%);*/
+	position:center;
+	
+	}
+	
+	
+	
+/* xX Ende der überschrift Xx */
+
+
+.überschriften{
+	underline:3px solid black;
+	
+}
+
+
+
+
+/* xX Beginn des Hintergrunds Xx */
+
+#parallax {  /*hintergrund bild*/
+    
+    background-image: url("wallpaper1.jpg"); /*bild*/
+
+    
+    min-height: 500px;  /*höhe*/
+
+    /* scroll effekt*/
+    background-attachment: fixed; /*hintergrundbild bleibt fest stehen*/
+    background-position: center;  /*position des bildes*/
+    background-repeat: no-repeat; /* wiederholungen des hintergrundbildes*/
+    background-size: cover; /*hintergrund skalierung angepasst*/
+	
+}
+
+#parallax2 {    /*hintergrund bild*/
+	 
+    background-image: url("wallpaper2.jpg");  /* bild */
+
+    
+    min-height: 500px; /* bild-höhe */
+
+    /* scrolleffekt */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+	
+	
+}
+
+#parallax3 {    /*hintergrund bild*/
+	 
+    background-image: url("wallpaper3.jpg");  /* bild */
+
+    
+    min-height: 500px; /* bild-höhe */
+
+    /* scrolleffekt */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+	
+	
+}
+
+#parallax4 {    /*hintergrund bild*/
+	 
+    background-image: url("wallpaper4.jpg");  /* bild */
+
+    
+    min-height: 500px; /* bild-höhe */
+
+    /* scrolleffekt */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+	
+	
+}
+
+#parallax5 {    /*hintergrund bild*/
+	 
+    background-image: url("wallpaper7.jpg");  /* bild */
+
+    
+    min-height: 500px; /* bild-höhe */
+
+    /* scrolleffekt */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+	
+	
+}
+
+#parallax6 {    /*hintergrund bild*/
+	 
+    background-image: url("wallpaper5.jpg");  /* bild */
+
+    
+    min-height: 500px; /* bild-höhe */
+
+    /* scrolleffekt */
+    background-attachment: fixed;
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-size: cover
+	
+	
+}
+
+
+/* xX Ende des Hintergrunds Xx */
+
+
+
+
+
+.topnav {
+    
+    overflow: hidden;
+	background-color:#ffcc00;
+	border-radius:1em;
+	margin-top:35px;
+	border:2px solid black;
+	
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    /*padding: 14px 16px;*/
+	
+	padding: 20px 25px;
+    text-decoration: none;
+    font-size: 17px;
+	
+	
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #a1710b;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    
+    color:white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+}
+
+.mü {    /*map überschriften und start unter überschrift*/
+font-size:150%;
+
+}
+
+
+
+
+
+
+h4 {     /*map-namen unterstrichen*/
+	text-decoration:underline;
+	
+}
+
+
+
+
+/* xX Ende Tab-Buttons Xx */
+
+
+/* xX Beginn Reaktionsspiel 2 Xx */
+
+#formen  {      /*formen*/
+	    width:200px;
+	    height:1000px;
+	   background-color:red;
+	   display:none; /*damit das objekt erst nach einer random zeit erscheint(setTimeot,...)*/
+	   position:relative;
+	   max-height:100%;
+	   max-width:100%;
+	   
+    }
+
+	
+	
+
+	
+	.picture{
+		max-width:100%;
+	max-height:100%;
+	width:center;
+	position:center;
+	}
+	
+	.picture2{
+		max-width:100%;
+	max-height:100%;
+	width:center;
+	}
+	
+	
+	
+table,  /*tabelle*/
+th,
+td {
+	border: 1px solid black;
+	
+}
+
+
+
+.info{
+	border: 5px solid black;
+	 padding:5px;
+	 background-color:#ffcc00;
+	 /*background-image: url("WhiteNoise1.jpg");  /* bild */ 
+     /*min-height: 500px;  bild-höhe */
+	 margin-top:15px;
+	 margin-bottom:15px;
+}
+
+
+.neueSeason {     /*news neue season*/
+     border: 5px solid black;
+	 padding:5px;
+	 background-color:#ffcc00;
+	 /*background-image: url("WhiteNoise1.jpg");  /* bild */ 
+     /*min-height: 500px;  bild-höhe */
+	 margin-top:250px;
+}
+
+
+#seasonvideo{
+	margin-top:50px;
+}
+
+#avn{
+	margin-top:50px;
+	max-height:100%;
+	max-width:100%;
+}
+
+
+
+	#hulk{
+		
+		
+	}
+	
+	
+#AlphaPack{
+	background-color:#0066ff;
+	border-radius:1em;
+	margin:5px;
+	border:4px solid black;
+	padding:5px;
+	background-image:linear-gradient(to bottom left, yellow, red);
+}
+
+#alpha{
+	
+	margin-bottom:100px;
+	margin-top:70px;
+	display:block;
+	max-width:100%;
+	max-height:100%;
+	width:center;
+}
+
+#collect{
+	background-color:#00ff99;
+	border-radius:1em;
+	margin:5px;
+	border:4px solid black;
+	padding:5px;
+	background-image:linear-gradient(to left,navy, teal, green);
+	
+}
+
+#reserver{
+	
+	
+}
+
+#elite{
+	
+	/*background-color:#ff9933;*/
+	border-radius:1em;
+	margin:5px;
+	border:4px solid black;
+	padding:5px;
+	background-image:linear-gradient(to bottom, pink,red,purple);
+}
+
+.elite{
+
+}
+
+#button1{
+	height:50px;
+	width:100px;
+	max-height:100%;
+	max-width:100%;
+	float:right;
+	background-image:linear-gradient(to bottom right, black 15%,red 50%,black 90%);
+	color:black;
+}
+
+
+.abstandSM{
+	margin-top:150px;
+}
+
+
+.gameplay {
+	display:block;
+	margin:0 auto;
+	/*width:1280;
+	height:720;*/
+	margin-bottom:50px;
+	width:center;
+	max-width:100%;
+	max-height:100%;
+	margin:center;
+}
+
+
+
+iframe {
+	display:block;
+	margin:0 auto;
+	margin-bottom:50px;
+	max-width:100%;
+	max-height:100%;
+	margin:center;
+}
+
+
+
+
+#Trailer{
+	background-color:#ffcc00;
+	border:4px solid black;
+	text-align:center;
+	width:center;
+	
+	margin:center;
+	
+}
+
+
+#gameplay1{
+	background-color:#ffcc00;
+	border:4px solid black;
+	text-align:center;
+	width:center;
+	
+	margin:center;
+}
+
+
+#gameplay2{
+	background-color:#ffcc00;
+	border:4px solid black;
+    text-align:center;
+	width:center;
+	
+	margin:center;
+}
+
+
+
+#gameplay3{
+	background-color:#ffcc00;
+	border:4px solid black;
+	text-align:center;
+	width:center;
+	
+	margin:center;
+}
+
+
+
+
+#gameplay4{
+	background-color:#ffcc00;
+	border:4px solid black;
+	text-align:center;
+	width:center;
+	
+	margin:center;
+}
+
+
+#spielprinzip{
+	border:4px solid black;
+	background-color:#ffcc00;
+	padding:10px;
+}
+
+
+
+
+
+.oben {
+	background-color:black;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:50px;
+	
+	/*min-height:80px;*/
+}
+
+
+
+.oben2{
+	
+	color:#ffcc00;
+	
+}
+
+
+
+
+
+#Spielinfo {
+	padding:10px;
+	border-radius:50px;
+	background-color:#ffcc00;
+	border:2px solid black;
+	margin:2px;
+	margin-top:10px;
+}
+
+
+
+#reaction{
+	height:1000px;
+	/*background-image:linear-gradient(270deg, #ffcc00 5%, black 80%);*/
+	/*border:2px solid black;*/
+	/*border:2px 270deg, black 5%,#ffcc00 80% ;*/
+	padding:5px;
+	margin-top:30px;
+    /*color:#ffcc00;*/
+	max-height:100%;
+	max-width:100%;
+}
+
+.sichtbar{
+	color:#ffcc00;
+	max-height:100%;
+	max-width:100%;
+	
+}
+
+.bildgroße{
+	/*width:813; 
+	height:344.5;*/
+	max-height:100%;
+	max-width:100%;
+	height:100%;
+	width:100%;
+	
+	}
+
+	
+	#co2{
+		color:#ffcc00;
+	}
+	
+	
+	.abstandco2{
+		padding-top:100px;
+	}
+	
+	.abstandco{
+		margin-top:100px;
+	}
+	
+	.abstandco3{
+		margin-top:500px;
+	}
+
+#größe{
+	font-size:150%;
+}
+
+#wie{
+	border:3px solid black;
+	padding:3px;
+	margin:3px;
+	background-color:#ffcc00;
+	margin-bottom:10px;
+}
+
+
+#zielübung{
+	padding:5px;
+	margin:5px;
+	border-radius:5px;
+	background-color:#ff3399;
+}
+
+
+
+.op{
+	
+	margin-top:75px;
+	margin-left:25px;
+	margin-right:25px;
+	padding-bottom:75px;
+	border-bottom:4px solid black;
+	padding-top:75px;
+	background-color:black;
+	color:white;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+
+.wo{
+	margin:center;
+	width:100%;
+}
+
+
+#ope{
+	border-radius:4px;
+	background-color:grey;
+	margin-bottom:50px;
+	padding:10px;
+}
+
+
+
+
+#angreifer{
+	text-align:center;
+	background-color:#0066ff;
+	border-radius:100px;
+	
+	margin:center;
+}
+
+
+#verteidiger{
+	text-align:center;
+	background-color:#ff6600;
+	border-radius:100px;
+	
+	margin:center;
+}
+
+
+.operatorV{
+	
+	
+	border:3px solid #ffcc00 ;
+	margin-bottom:100px;
+	margin-top:70px;
+	display:block;
+	max-width:100%;
+	max-height:100%;
+	width:center;
+	
+	
+	
+	
+}
+
+
+.operatorB{
+	float:left;
+	margin-bottom:100px;
+	max-width:100%;
+	max-height:100%;
+   
+}
+
+
+.videoS{
+	
+	border:4px solid black;
+	text-align:center;
+	margin:center;
+	
+	
+	
+	width:100%;
+}
+
+#Quellen{
+	margin-bottom:50px;
+	max-height:100%;
+	max-width:100%;
+}
+
+
+.quellenT{
+	
+	max-height:100%;
+	max-width:100%;
+}
+
+
+
+
+#blackice {
+	background-color:#0099cc;
+	margin:5px;
+	padding:5px;
+	border-radius:3px;
+}
+
+#dustline{
+	background-color:#cc6600;
+	margin:5px;
+	padding:5px;
+	border-radius:3px;
+}
+
+
+#skullrain{
+	background-color:#009933;
+	margin:5px;
+	padding:5px;
+	border-radius:3px;
+}
+
+#redcrow{
+	background-color:#cc0000;
+	margin:5px;
+	padding:5px;
+	border-radius:3px;
+}
+
+#velvetshell{
+	background-color:#944dff;
+	margin:5px;
+	padding:5px;
+	border-radius:3px;
+}
+
+
+#bloodorchid{
+	background-color:#993333;
+	margin:5px;
+	padding:5px;
+	border-radius:3px;
+}
+
+#whitenoise{
+	border:3px solid black;
+	background-color:white;
+	margin:5px;
+	padding:5px;
+	border-radius:3px;
+}
+
+#health{
+	background-color:#669999;
+	margin:5px;
+	padding:5px;
+	border-radius:3px;
+}
+
+
+#tipps{
+	
+	margin-top:80px;
+	background-color:#a64dff;
+	padding:75px;
+	border-bottom:4px solid black;
+}
+
+
+.mapAb{
+	margin-top:50px;
+	margin-bottom:50px;
+	
+}
+
+
+/*.datenschutz{
+	background-color:black;
+	color:#ffcc00;
+	omargin:30px;
+	
+	
+	
+}*/
+
+
+#datens{
+	border:10px solid #ffcc00; 
+	background-color:black;
+	color:white;
+	padding:25px;
+	margin:20px;
+}
+
+
+#bereichL,#bereich1,#bereich2,#bereich3,#bereich4,#bereich5{
+	border:5px solid black;
+	text-align:center;
+	margin:20px;
+	
+}
+
+#Spielmodi{
+	color:black;
+	border:3px solid black;
+	padding-top:50px;
+	padding-bottom:50px;
+	padding-left:15px;
+	padding-right:15px;
+	background-color:#ffcc00;
+}
+
+#Maps{
+	color:white;
+}
+
+#Quellen{
+	color:black;
+}
+

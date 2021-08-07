@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8"> <!-- ä,ö,ü,ß-->
+   <link rel="stylesheet" href="{{url_for('static', filename='r62.css')}}"> <!-- verlinkung mit css datei-->
+   <title> Rainbow Six Siege </title> <!--Anzeige im Tab,oben-->
+   
+ 
+   
+   </head>
+   
+    <body>
+	
+<!-- xX Beginn der Überschrift Xx -->
+<main id="main">
+<h1 id="drei"> <a href="{{url_for('home')}}">Rainbow Six Siege </a> </h1>  <!--Überschrift verlinkt (mit a),eingepackt in main>css kasten um überschrift-->
+
+<div class="topnav" id="myTopnav">
+<a href="{{url_for('home')}}" class="active" class="überschriften">Home</a>
+<a href="{{url_for('news')}}" class="überschriften">News</a>
+<a href="{{url_for('operator')}}" class="überschriften">Operator</a>
+<a href="{{url_for('wiemanspielt')}}" class="überschriften">Wie man spielt</a>
+<a href="{{url_for('collectables')}}" class="überschriften">Collectables</a>
+<a href="{{url_for('spielmodi')}}" class="überschriften">Spielmodi</a>
+<a href="{{url_for('maps')}}" class="überschriften">Maps</a>
+  
+  
+</div> 
+	
+	</main>
+	<div id="bereichL">
+	<div id="bereich1">
+	<div id="bereich2">
+	<div id="bereich3">
+	<div id="bereich4">
+	<div id="bereich5">
+	<b><p>Dieser Bereich ist in Bearbeitung!</p></b>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="oben"><p><b><a class="oben2" href="#main"> Klicke hier, um nach oben zu gelangen </a></b></p>   <b><p><a href="{{url_for('datenschutz')}}" class="datenschutz"> Datenschutz </a></p></b> <b><p><a href="{{url_for('impressum')}}" class="datenschutz"> Impressum </a></p></b>   </div>
+
+
+</body>
+</html>
